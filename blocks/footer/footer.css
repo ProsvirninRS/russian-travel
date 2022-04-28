@@ -9,8 +9,8 @@
 
 @media (max-width: 1024px) {
   .footer {
-    margin-left: calc(24px + (48 - 24) * ((100vw - 768) / (1024 - 768)));
-    margin-right: calc(24px + (48 - 24) * ((100vw - 768) / (1024 - 768)));
+    margin-left: calc(24px + (48 - 24) * ((100vw - 768px) / (1024 - 768)));
+    margin-right: calc(24px + (48 - 24) * ((100vw - 768px) / (1024 - 768)));
   }
 }
 
