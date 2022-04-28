@@ -1,0 +1,39 @@
+.place {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 40px;
+  grid-template-rows: auto auto;
+  row-gap: 48px;
+  width: 984px;
+}
+
+@media screen and (max-width: 1280px) {
+  .place {
+    width: calc(928px + (984 - 928) * ((100vw - 1024px) / (1280 - 1024)));
+    column-gap: calc(32px + (40 - 32) * ((100vw - 1024px) / (1280 - 1024)));
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    width: calc(720px + (928 - 720) * ((100vw - 768px) / (1024 - 768)));
+    column-gap: calc(28px + (32 - 28) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    width: calc(320px + (720 - 320) * ((100vw - 320px) / (768 - 320)));
+    column-gap: 28px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: calc(32px + (48 - 32) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place {
+    width: 320px;
+    row-gap: 32px;
+  }
+}

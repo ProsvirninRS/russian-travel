@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 92px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    gap: calc(88px + (92 - 88) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    gap: calc(64px + (88 - 64) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    gap: 64px;
+  }
+}

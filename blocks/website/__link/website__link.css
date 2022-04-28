@@ -1,0 +1,9 @@
+.website__link {
+  margin: 0;
+  max-width: 456px;
+  max-height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #FFF;
+}
