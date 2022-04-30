@@ -4,6 +4,7 @@
     text-decoration-line: none;
     margin: 18px 0 6px 18px;
     color: #fff;
+    transition: opacity .5s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -18,4 +19,8 @@
     font-size: 18px;
     line-height: 20px;
   }
+}
+
+.header__lang-link:hover {
+  opacity: .8;
 }

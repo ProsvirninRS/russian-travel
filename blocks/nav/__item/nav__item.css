@@ -1,0 +1,11 @@
+.nav__item {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .nav__item {
+    display: block;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+}

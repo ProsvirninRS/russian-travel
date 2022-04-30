@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 984px;
-  height: 429px;
+  min-height: 429px;
   margin: 0 auto;
 }
 
@@ -21,13 +21,13 @@
 @media screen and (max-width: 768px) {
   .intro {
     width: calc(288px + (720 - 288) * ((100vw - 320px) / (768 - 320)));
-    height: calc(754px + (429 - 754) * ((100vw - 320px) / (768 - 320)));
+    min-height: calc(754px + (429 - 754) * ((100vw - 320px) / (768 - 320)));
   }
 }
 
 @media screen and (max-width: 320px) {
   .intro {
     width: 288px;
-    height: 754px;
+    min-height: 754px;
   }
 }
